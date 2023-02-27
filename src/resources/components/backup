@@ -1,0 +1,63 @@
+        <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <router-link to="/" class="nav-link" tag="a">Home</router-link>
+                    </li>
+
+                    <li class="nav-item dropdown d-none-md d-none d-lg-block">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink_1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Schedules </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink_1">
+                            <router-link :to="{ name: 'reservations.index' }" class="dropdown-item" tag="a">Reservations and Bookings </router-link>
+                            <router-link :to="{ name: 'repairs.index' }" class="dropdown-item" tag="a">Schedule Repair </router-link>
+                            <!-- <router-link :to="{name: 'events.index'}" class="dropdown-item" tag="a">Calendar of Event
+                            </router-link> -->
+                            <router-link :to="{ name: 'announcements.index' }" class="dropdown-item" tag="a">Events / Announcements </router-link>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown d-none d-lg-block">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink_2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Payments </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink_2">
+                            <router-link :to="{ name: 'bills-utilities.index' }" class="dropdown-item" tag="a">Bills </router-link>
+                            <a class="dropdown-item" href="#">Rent / Admin Fees</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown d-none d-lg-block">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink_3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Documents </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink_3">
+                            <!-- <router-link :to="{ name: 'documents.index' }" class="dropdown-item" tag="a">Document of Records </router-link> -->
+                            <a class="dropdown-item" href="#">Request Documents</a>
+                        </div>
+                    </li>
+                    <li class="nav-item d-block d-lg-none">
+                        <router-link :to="{ name: 'reservations.index' }" class="nav-link" tag="a">Reservations and Bookings </router-link>
+                    </li>
+                    <li class="nav-item d-block d-lg-none">
+                        <router-link :to="{ name: 'repairs.index' }" class="nav-link" tag="a">Schedule Repair </router-link>
+                    </li>
+                    <!-- <li class="nav-item d-block d-lg-none">
+                        <router-link :to="{name: 'events.index'}" class="nav-link" tag="a">Calendar of Events
+                        </router-link>
+                    </li> -->
+                    <li class="nav-item d-block d-lg-none">
+                        <router-link :to="{ name: 'announcements.index' }" class="nav-link" tag="a">Events / Announcements </router-link>
+                    </li>
+                    <li class="nav-item d-block d-lg-none">
+                        <router-link :to="{ name: 'bills-utilities.index' }" class="nav-link" href="#">Bills</router-link>
+                    </li>
+                    <li class="nav-item d-block d-lg-none">
+                        <a class="nav-link" href="#">Rent / Admin Fees</a>
+                    </li>
+
+                    <!-- <li class="nav-item d-block d-lg-none">
+                        <router-link :to="{ name: 'documents.index' }" class="nav-link" tag="a">Document Records </router-link>
+                    </li> -->
+
+                    <li class="nav-item d-block d-lg-none">
+                        <a class="nav-link" href="#">Request of Documents</a>
+                    </li>
+
+                    <router-link :to="{ name: 'logbooks.index' }" class="nav-link" tag="a">Visitor Logbook </router-link>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Messages</a>
+                    </li>
+                </ul>
